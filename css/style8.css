@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #6d6c6c;
+  width: 880px;
+  min-height: 1300px;
+  padding: 35px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 880px;
+  min-height: 100px;
+  background-color: #a7a5a5;
+}/*# sourceMappingURL=style8.css.map */
