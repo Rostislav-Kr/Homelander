@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    background-color: #6d6c6c;
+    
+    width: 880px;
+    min-height: 1300px;
+    padding: 35px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:880px;
+    min-height: 100px;
+    background-color: #a7a5a5;
+}
+.header__title{
+    width: 700px;
+    min-height: 50px;
+    font-size: 20px;
+}
+.registr{
+    min-width: 245px;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+      width: 245px;
+      height: 20px;
+}
+
+.box__input{
+    width: 140px;
+    height: 20px;
+    
+}
+.box__button{
+    width: 90px;
+    height: 26px;
+    font-size: 17px;
+}
+.nav{
+    min-width: 880px;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__elem{
+    width: 100px;
+    height: 25px;
+    background-color: #ffff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition-duration: 100ms;
+&:hover{
+    background-color:#00ffff;
+}
+}
+.main{
+    min-width: 880px;
+    min-height: 1230px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article1{
+display: flex;
+justify-content: space-between;
+min-width: 880px;
+min-height: 450px;
+background-color: #a7a5a5;
+}
+.box1{
+    min-width: 430px;
+    min-height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content1__foto, .content10__foto{
+    width: 430px;
+}
+.content1__text{
+    display: flex;
+}
+
+.content2__foto, .content3__foto{
+    width: 200px;
+}
+
+.content4__foto, .content5__foto, .content6__foto{
+    width: 135px;
+}
+.article2{
+    display: flex;
+    justify-content: space-between;
+    min-width: 880px;
+    min-height: 200px;
+    background-color: #a7a5a5;
+}
+.content7, .content8,.content9{
+    width: 280px;
+}
+.content7__foto, .content8__foto,.content9__foto{
+    width: 280px;
+}
+.article3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 880px;
+    min-height: 450px;
+    background-color: #a7a5a5;
+}
+.article3__text, .content10{
+    width: 430px;
+    
+}
+.article4{
+    background-color: #a7a5a5;
+}
+
+
+
