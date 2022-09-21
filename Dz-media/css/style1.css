@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.navigation__item {
+  padding: 10px;
+  text-align: center;
+  min-width: 100px;
+  background-color: #0000ff;
+  border: 1px solid white;
+  list-style-type: none;
+}/*# sourceMappingURL=style1.css.map */
