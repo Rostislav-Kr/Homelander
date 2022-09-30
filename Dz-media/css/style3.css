@@ -1,0 +1,127 @@
+@charset "UTF-8";
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(235, 232, 232);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+  position: relative;
+}
+
+.aside::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 3px;
+  background-color: rgb(54, 61, 54);
+}
+
+.aside__name {
+  padding: 20px 0;
+}
+
+.navigation {
+  padding: 15px 0;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+}
+
+.navigation__item {
+  list-style: none;
+  padding: 0 5px;
+  border-radius: 4px;
+  color: gray;
+}
+.navigation__item:hover {
+  background-color: rgb(65, 64, 64);
+  color: white;
+}
+
+.navigation__item1:nth-child(1) {
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+.navigation__item2:nth-child(2) {
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+.navigation__item3:nth-child(4) {
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+.aside__text {
+  padding: 20px 0;
+}
+
+@media (max-width: 496px) {
+  .navigation__list {
+    flex-direction: column;
+  }
+  .navigation__item1:nth-child(1) {
+    width: 30%;
+    background-color: white;
+    color: gray;
+  }
+  .navigation__item1:nth-child(1)::before {
+    content: "≡";
+  }
+  .navigation__item2:nth-child(2) {
+    width: 30%;
+    background-color: white;
+    color: gray;
+  }
+  .navigation__item2:nth-child(2)::before {
+    content: "≡";
+  }
+  .navigation__item3:nth-child(4) {
+    width: 30%;
+    background-color: white;
+    color: gray;
+  }
+  .navigation__item3:nth-child(4)::before {
+    content: "≡";
+  }
+  .navigation__item1:not(.navigation__item1:nth-child(1)) {
+    display: none;
+  }
+  .navigation__item2:not(.navigation__item2:nth-child(2)) {
+    display: none;
+  }
+  .navigation__item3:not(.navigation__item3:nth-child(4)) {
+    display: none;
+  }
+  .navigation__list:hover > .navigation__item {
+    display: block;
+    width: 30%;
+  }
+  .navigation__list:hover {
+    background-color: white;
+  }
+  .navigation__list1:hover > li:nth-child(1)::before {
+    content: "✓";
+    color: gray;
+  }
+  .navigation__list2:hover > li:nth-child(2)::before {
+    content: "✓";
+    color: gray;
+  }
+  .navigation__list3:hover > li:nth-child(4)::before {
+    content: "✓";
+    color: gray;
+  }
+}/*# sourceMappingURL=style3.css.map */
