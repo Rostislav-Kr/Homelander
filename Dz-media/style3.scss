@@ -1,21 +1,24 @@
-*,*::after,*::before{
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     // border: 1px solid red;
+    transition: all 0.3s;
 }
-body{
+body {
     background-color: rgb(235, 232, 232);
 }
-.header{
+.header {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
     width: 80%;
     position: relative;
 }
-.aside{
-    &::before{
+.aside {
+    &::before {
         content: "";
         width: 100%;
         position: absolute;
@@ -23,120 +26,133 @@ body{
         background-color: rgb(54, 61, 54);
     }
 }
-.aside__name{
+.aside__name {
     padding: 20px 0;
 }
-.navigation{
+.navigation {
     padding: 15px 0;
+    display: flex;
 }
-.navigation__list{
+.navigation__list {
     list-style: none;
     display: flex;
 }
-.navigation__item{
+.navigation__item {
     list-style: none;
     padding: 0 5px;
     border-radius: 4px;
     color: gray;
-    &:hover{
+    &:hover {
         background-color: rgb(65, 64, 64);
         color: white;
     }
- 
 }
-.navigation__item1{
-    &:nth-child(1){
+.navigation__item1 {
+    &:nth-child(1) {
         background-color: rgb(56, 55, 55);
         color: white;
     }
 }
-.navigation__item2{
-    &:nth-child(2){
+.navigation__item2 {
+    &:nth-child(2) {
         background-color: rgb(56, 55, 55);
         color: white;
     }
 }
-.navigation__item3{
-    &:nth-child(4){
+.navigation__item3 {
+    &:nth-child(4) {
         background-color: rgb(56, 55, 55);
         color: white;
     }
 }
 
-.aside__text{
+.aside__text {
     padding: 20px 0;
 }
-@media(max-width:496px){
-.navigation__list{
-    flex-direction: column;
-    
-}
-.navigation__item1:nth-child(1){
-    width: 30%;
-    background-color: white;
-    color: gray;
-    &::before{
-        content: "\2261";
+@media (max-width: 496px) {
+    .navigation__list {
+        position: relative;
+        flex-direction: column;
+        min-width: 45%;
+        border: 1px solid gray;
+        overflow: hidden;
     }
-}
-.navigation__item2:nth-child(2){
-    width: 30%;
-    background-color: white;
-    color: gray;
-    &::before{
-        content: "\2261";
+    .navigation__item{
+        padding-left: 15px;
+        border-radius: 0;
+        &::before{
+            position: absolute;
+            left: 2px;
+        }
+        
     }
-}
-.navigation__item3:nth-child(4){
-    width: 30%;
-    background-color: white;
-    color: gray;
-    &::before{
-        content: "\2261";
-    }
-}
-
-.navigation__item1:not(.navigation__item1:nth-child(1)){
-    display: none;
-}
-.navigation__item2:not(.navigation__item2:nth-child(2)){
-    display: none;
-}
-.navigation__item3:not(.navigation__item3:nth-child(4)){
-    display: none;
-}
-.navigation__list{
-    &:hover>.navigation__item{
-        display: block;
-        width: 30%;
-    }
-    &:hover{
+    .navigation__item1:nth-child(1) {
         background-color: white;
-    }
-}
-.navigation__list1{
-    &:hover>li:nth-child(1){
-        &::before{
-            content: "\2713";
-            color: gray;
+        color: gray;
+        &::before {
+            content: "\2261";
         }
     }
-}
-.navigation__list2{
-    &:hover>li:nth-child(2){
-        &::before{
-            content: "\2713";
-            color: gray;
+    .navigation__item2:nth-child(2) {
+        background-color: white;
+        color: gray;
+        &::before {
+            content: "\2261";
         }
     }
-}
-.navigation__list3{
-    &:hover>li:nth-child(4){
-        &::before{
-            content: "\2713";
-            color: gray;
+    .navigation__item3:nth-child(4) {
+        background-color: white;
+        color: gray;
+        &::before {
+            content: "\2261";
         }
     }
-}
 
+    .navigation__item1:not(.navigation__item1:nth-child(1)) {
+        display: none;
+    }
+    .navigation__item2:not(.navigation__item2:nth-child(2)) {
+        display: none;
+    }
+    .navigation__item3:not(.navigation__item3:nth-child(4)) {
+        display: none;
+    }
+    .navigation__list{
+        border-radius: 4px;
+        &:hover > .navigation__item {
+            display: block;
+
+        }
+        &:hover {
+            background-color: white;
+            height: auto;
+        }
+    }
+    .navigation__list1 {
+        justify-self: flex-start;
+        &:hover > li:nth-child(1) {
+            &::before {
+                content: "\2713";
+                color: gray;
+            }
+        }
+    }
+    .navigation__list2 {
+        justify-self: center;
+        &:hover > li:nth-child(2) {
+            &::before {
+                content: "\2713";
+                color: gray;
+            }
+        }
+    }
+    .navigation__list3 {
+        justify-self: flex-end;
+        &:hover > li:nth-child(4) {
+            &::before {
+                content: "\2713";
+                color: gray;
+            }
+        }
+    }
 }
